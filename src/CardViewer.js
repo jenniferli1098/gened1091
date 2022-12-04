@@ -62,72 +62,86 @@ function CardViewer() {
   const handleClose = () => setOpen(false);
 
   return (
-    <Container maxWidth="md" margin="30px">
-      <Grid container spacing={3} justifyContent="center" alignItems="center">
-        <Grid item md={10}></Grid>
-        <Grid item container xs={12} alignItems="center">
-          <Grid item md={10}>
-            <Typography variant="h3" gutterBottom>
-              {deckId}
+    <div
+      style={{
+        backgroundImage: `url(` + Philosophers[deckId].background + `)`, //Philosophers[deckId].background,
+        backgroundSize: `cover`,
+        backgroundRepeat: `no-repeat`,
+        margin: `0 0 0 0`,
+      }}
+    >
+      <Container
+        maxWidth="md"
+        style={{ backgroundColor: `rgba(255, 255, 255, 0.65)` }}
+      >
+        <Grid container spacing={3} justifyContent="center" alignItems="center">
+          <Grid item md={10}></Grid>
+          <Grid item container xs={12} alignItems="center">
+            <Grid item md={10}>
+              <Link to={`/`}>
+                <Typography variant="h3" gutterBottom>
+                  {deckId}
+                </Typography>
+              </Link>
+            </Grid>
+            <Grid item container justifyContent="flex-end" md={2}>
+              <Grid item>
+                <IconButton aria-label="delete" onClick={handleOpen}>
+                  <InfoIcon fontSize="inherit" />
+                </IconButton>
+              </Grid>
+            </Grid>
+
+            <Typography variant="subtitle1" gutterBottom>
+              Card {currentIndex + 1} out of {cards.length}
             </Typography>
           </Grid>
-          <Grid item container justifyContent="flex-end" md={2}>
+          <Grid item container xs={2} justifyContent="flex-end">
             <Grid item>
-              <IconButton aria-label="delete" onClick={handleOpen}>
-                <InfoIcon fontSize="inherit" />
+              <IconButton
+                aria-label="delete"
+                size="large"
+                disabled={currentIndex === 0}
+                onClick={prevCard}
+              >
+                <ArrowBackIosIcon fontSize="inherit" />
               </IconButton>
             </Grid>
           </Grid>
-
-          <Typography variant="subtitle1" gutterBottom>
-            Card {currentIndex + 1} out of {cards.length}
-          </Typography>
-        </Grid>
-        <Grid item container xs={2} justifyContent="flex-end">
-          <Grid item>
-            <IconButton
-              aria-label="delete"
-              size="large"
-              disabled={currentIndex === 0}
-              onClick={prevCard}
-            >
-              <ArrowBackIosIcon fontSize="inherit" />
-            </IconButton>
+          <Grid item xs={8} md={6}>
+            <Card elevation={3}>{cards[currentIndex]}</Card>
+          </Grid>
+          <Grid item container xs={2} justifyContent="flex-start">
+            <Grid item>
+              <IconButton
+                aria-label="delete"
+                size="large"
+                disabled={currentIndex === cards.length - 1}
+                onClick={nextCard}
+              >
+                <ArrowForwardIosIcon fontSize="inherit" />
+              </IconButton>
+            </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={8} md={6}>
-          <Card elevation={3}>{cards[currentIndex]}</Card>
-        </Grid>
-        <Grid item container xs={2} justifyContent="flex-start">
-          <Grid item>
-            <IconButton
-              aria-label="delete"
-              size="large"
-              disabled={currentIndex === cards.length - 1}
-              onClick={nextCard}
-            >
-              <ArrowForwardIosIcon fontSize="inherit" />
-            </IconButton>
-          </Grid>
-        </Grid>
-      </Grid>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={style}>
-          <img src={Philosophers[deckId].image} height={200} />
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            {deckId}
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
-        </Box>
-      </Modal>
-    </Container>
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style}>
+            <img src={Philosophers[deckId].image} height={200} />
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              {deckId}
+            </Typography>
+            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            </Typography>
+          </Box>
+        </Modal>
+      </Container>
+    </div>
   );
 }
 
