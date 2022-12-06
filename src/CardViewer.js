@@ -116,8 +116,10 @@ function CardViewer() {
               </IconButton>
             </Grid>
           </Grid>
-          <Grid item xs={8} md={6}>
-            <Card elevation={3}>{cards[currentIndex]}</Card>
+          <Grid item xs={8} md={7}>
+            <Card elevation={3} style={{ padding: "10%", lineHeight: "2rem" }}>
+              <p>{cards[currentIndex]}</p>
+            </Card>
           </Grid>
           <Grid item container xs={2} justifyContent="flex-start">
             <Grid item>

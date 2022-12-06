@@ -56,12 +56,59 @@ function HomePage() {
       <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
         <div class="content">
           <h1>Gened 1091 Project</h1>
-          <p class="major">Wekcome to our Gened 1091 Project</p>
-
-          <p>Cassie and Jennifer</p>
+          <p class="major">Welcome to our Gened 1091 Project</p>
+          <p>
+            In our readaptation of the We’re Not Really Strangers card game, we
+            introduce card decks that brings the philosophical themes of Mozi,
+            Kongzi, Mengzi, Zhuangzi, and Dong Zhongshu to life. This game is
+            designed for two or more players who access the card game online and
+            answer thought-provoking questions inspired by key Chinese
+            philosophers. We hope that players better understand themselves and
+            their partners as they respond to our prompts.
+          </p>
+          <p>
+            The game is divided into multiple levels that encourage users to
+            engage with different perspectives. Each level in our adaptation
+            spotlights one philosopher.
+          </p>
+          <p>
+            Many prompts include textual citations to our prompts; we encourage
+            players to explore the relevant passages, expand their
+            understanding, and pursue their intellectual interest in a
+            particular philosopher and/or concept.
+          </p>
+          <p>
+            Our final level attempts to both synthesize the previous levels and
+            the course overall.
+          </p>
         </div>
-        <div class="image">
-          <img src={Banner} alt="" />
+        <div class="content">
+          <h1> </h1>
+          <br></br>
+          <br></br>
+          <br></br>
+          <p>
+            Ultimately, in reimagining We’re Not Really Strangers as a digital
+            card game with prompts inspired by ancient Chinese philosophers, we
+            urge individuals to reflect on universal human topics:
+          </p>
+
+          <ul>
+            <li>Human nature</li>
+            <li>Morality</li>
+            <li>Interpersonal relationships</li>
+            <li>External and internal motivations</li>
+            <li>Structure of society</li>
+          </ul>
+          <p>
+            In the process of answering these questions, players strengthen both
+            their relationships with others and with themselves. The open-ended
+            nature of the questions stimulates intellectual discourse that
+            encourages individuals to reflect on their ruts and patterns, their
+            values, and their perspectives on humanity. Our adaptation thus
+            serves as an accessible form of self-cultivation and education
+            inspired by Chinese philosophers.
+          </p>
         </div>
       </section>
 
@@ -71,17 +118,11 @@ function HomePage() {
       >
         <div class="content">
           <h2>Mozi</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
-            ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis
-            laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
-            pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum
-            dolor sit amet.
-          </p>
+          <p>Structure of Society | External Motivation | Human Nature</p>
           <ul class="actions stacked">
             <li>
               <a href="/viewer/Mozi" class="button">
-                Learn More
+                Explore Deck
               </a>
             </li>
           </ul>
@@ -94,17 +135,11 @@ function HomePage() {
       <section class="spotlight style1 orient-left content-align-left image-position-center">
         <div class="content">
           <h2>Kongzi</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
-            ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis
-            laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
-            pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum
-            dolor sit amet.
-          </p>
+          <p>Self-cultivation | Filiel Piety | Interpersonal Relationships</p>
           <ul class="actions stacked">
             <li>
               <a href="/viewer/Kongzi" class="button">
-                Learn More
+                Explore Deck
               </a>
             </li>
           </ul>
@@ -117,17 +152,11 @@ function HomePage() {
       <section class="spotlight style1 orient-right content-align-left image-position-center">
         <div class="content">
           <h2>Mengzi</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
-            ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis
-            laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
-            pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum
-            dolor sit amet.
-          </p>
+          <p>Human Nature | Self-cultivation | Structure of Society</p>
           <ul class="actions stacked">
             <li>
               <a href="/viewer/Mengzi" class="button">
-                Learn More
+                Explore Deck
               </a>
             </li>
           </ul>
@@ -140,17 +169,11 @@ function HomePage() {
       <section class="spotlight style1 orient-left content-align-left image-position-center">
         <div class="content">
           <h2>Zhuangzi</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
-            ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis
-            laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
-            pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum
-            dolor sit amet.
-          </p>
+          <p>Spontenaity | Human Nature | Interpersonal Relationships</p>
           <ul class="actions stacked">
             <li>
               <a href="/viewer/Zhuangzi" class="button">
-                Learn More
+                Explore Deck
               </a>
             </li>
           </ul>
@@ -163,23 +186,38 @@ function HomePage() {
       <section class="spotlight style1 orient-right content-align-left image-position-center">
         <div class="content">
           <h2>Dong Zhongshu</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
-            ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis
-            laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
-            pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum
-            dolor sit amet.
-          </p>
+          <p>Structure of Society</p>
           <ul class="actions stacked">
             <li>
               <a href="/viewer/Dongzhongshu" class="button">
-                Learn More
+                Explore Deck
               </a>
             </li>
           </ul>
         </div>
         <div class="image">
           <img src={Sprouts} alt="" />
+        </div>
+      </section>
+
+      <section class="spotlight style1 orient-left content-align-left image-position-center">
+        <div class="content">
+          <h2>Summary</h2>
+          <p>
+            Final deck: After exploring each philosopher and their beliefs,
+            reflect on how they are similar or different to your own set of
+            beliefs. How will you incorporate these ideas to your everyday life?
+          </p>
+          <ul class="actions stacked">
+            <li>
+              <a href="/viewer/Summary" class="button">
+                Explore Deck
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src={Mountains} alt="" />
         </div>
       </section>
 
