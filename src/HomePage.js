@@ -6,6 +6,8 @@ import Fog from "./images/gallery/fog.jpg";
 import House from "./images/gallery/house.jpg";
 import Final from "./images/gallery/final.jpg";
 
+import CardViewer from "./CardViewer";
+
 function HomePage() {
   return (
     <div id="wrapper" class="divided">
