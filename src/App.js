@@ -2,19 +2,19 @@ import React from "react";
 import CardViewer from "./CardViewer";
 import HomePage from "./HomePage";
 
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 
 import "./App.css";
 
 export function App() {
   return (
-    <BrowserRouter>
+    <HashRouter base="/">
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/viewer/:deckId" element={<CardViewer />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
