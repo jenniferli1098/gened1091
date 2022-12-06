@@ -15,7 +15,7 @@ import { createTheme, styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
-import Fog from "./images/fog.jpg";
+import Fog from "./images/gallery/fog.jpg";
 
 import "./assets/css/main.css";
 
