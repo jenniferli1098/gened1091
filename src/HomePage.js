@@ -5,6 +5,10 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import { createTheme, styled } from "@mui/material/styles";
 import "./assets/css/main.css";
+import Gourds from "./images/gourds.jpg";
+import Mountains from "./images/mountains.jpg";
+import Sprouts from "./images/sprouts.jpg";
+import Banner from "./images/banner.jpg";
 const Card = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   textAlign: "center",
@@ -51,32 +55,22 @@ function HomePage() {
     <div id="wrapper" class="divided">
       <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
         <div class="content">
-          <h1>Story</h1>
-          <p class="major">
-            A (modular, highly tweakable) responsive one-page template designed
-            by <a href="https://html5up.net">HTML5 UP</a> and released for free
-            under the <a href="https://html5up.net/license">Creative Commons</a>
-            .
-          </p>
-          <ul class="actions stacked">
-            <li>
-              <a href="#first" class="button big wide smooth-scroll-middle">
-                Get Started
-              </a>
-            </li>
-          </ul>
+          <h1>Gened 1091 Project</h1>
+          <p class="major">Wekcome to our Gened 1091 Project</p>
+
+          <p>Cassie and Jennifer</p>
         </div>
         <div class="image">
-          <img src="images/banner.jpg" alt="" />
+          <img src={Banner} alt="" />
         </div>
       </section>
 
       <section
-        class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+        class="spotlight style1 orient-right content-align-left image-position-center"
         id="first"
       >
         <div class="content">
-          <h2>Magna etiam feugiat</h2>
+          <h2>Mozi</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
             ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis
@@ -86,20 +80,20 @@ function HomePage() {
           </p>
           <ul class="actions stacked">
             <li>
-              <a href="#" class="button">
+              <a href="/viewer/Mozi" class="button">
                 Learn More
               </a>
             </li>
           </ul>
         </div>
         <div class="image">
-          <img src="images/spotlight01.jpg" alt="" />
+          <img src={Gourds} alt="" />
         </div>
       </section>
 
-      <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+      <section class="spotlight style1 orient-left content-align-left image-position-center">
         <div class="content">
-          <h2>Tempus adipiscing</h2>
+          <h2>Kongzi</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
             ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis
@@ -109,20 +103,20 @@ function HomePage() {
           </p>
           <ul class="actions stacked">
             <li>
-              <a href="#" class="button">
+              <a href="/viewer/Kongzi" class="button">
                 Learn More
               </a>
             </li>
           </ul>
         </div>
         <div class="image">
-          <img src="images/spotlight02.jpg" alt="" />
+          <img src={Gourds} alt="" />
         </div>
       </section>
 
-      <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+      <section class="spotlight style1 orient-right content-align-left image-position-center">
         <div class="content">
-          <h2>Pharetra etiam nulla</h2>
+          <h2>Mengzi</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
             ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis
@@ -132,48 +126,67 @@ function HomePage() {
           </p>
           <ul class="actions stacked">
             <li>
-              <a href="#" class="button">
+              <a href="/viewer/Mengzi" class="button">
                 Learn More
               </a>
             </li>
           </ul>
         </div>
         <div class="image">
-          <img src="images/spotlight03.jpg" alt="" />
+          <img src={Sprouts} alt="" />
+        </div>
+      </section>
+
+      <section class="spotlight style1 orient-left content-align-left image-position-center">
+        <div class="content">
+          <h2>Zhuangzi</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
+            ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis
+            laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
+            pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum
+            dolor sit amet.
+          </p>
+          <ul class="actions stacked">
+            <li>
+              <a href="/viewer/Zhuangzi" class="button">
+                Learn More
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src={Mountains} alt="" />
+        </div>
+      </section>
+
+      <section class="spotlight style1 orient-right content-align-left image-position-center">
+        <div class="content">
+          <h2>Dong Zhongshu</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id
+            ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis
+            laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus,
+            pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum
+            dolor sit amet.
+          </p>
+          <ul class="actions stacked">
+            <li>
+              <a href="/viewer/Dongzhongshu" class="button">
+                Learn More
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src={Sprouts} alt="" />
         </div>
       </section>
 
       <footer class="wrapper style1 align-center">
         <div class="inner">
-          <ul class="icons">
-            <li>
-              <a href="#" class="icon brands style2 fa-twitter">
-                <span class="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="icon brands style2 fa-facebook-f">
-                <span class="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="icon brands style2 fa-instagram">
-                <span class="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="icon brands style2 fa-linkedin-in">
-                <span class="label">LinkedIn</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="icon style2 fa-envelope">
-                <span class="label">Email</span>
-              </a>
-            </li>
-          </ul>
           <p>
-            &copy; Untitled. Design: <a href="https://html5up.net">Gened1091</a>
+            &copy; Gened 1091. Design: <a href="https://html5up.net">HTML5UP</a>
             .
           </p>
         </div>

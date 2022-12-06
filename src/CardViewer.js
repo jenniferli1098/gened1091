@@ -14,8 +14,9 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { createTheme, styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+
+import "./assets/css/main.css";
 
 const style = {
   position: "absolute",
@@ -64,37 +65,43 @@ function CardViewer() {
   return (
     <div
       style={{
-        backgroundImage: `url(` + Philosophers[deckId].background + `)`, //Philosophers[deckId].background,
+        backgroundImage: `url(` + Philosophers[deckId].background + `)`,
         backgroundSize: `cover`,
         backgroundRepeat: `no-repeat`,
         margin: `0 0 0 0`,
+        height: `100vh`,
       }}
     >
       <Container
         maxWidth="md"
-        style={{ backgroundColor: `rgba(255, 255, 255, 0.65)` }}
+        style={{
+          backgroundColor: `rgba(255, 255, 255, 0.65)`,
+          height: `100vh`,
+        }}
       >
         <Grid container spacing={3} justifyContent="center" alignItems="center">
           <Grid item md={10}></Grid>
           <Grid item container xs={12} alignItems="center">
             <Grid item md={10}>
               <Link to={`/`}>
-                <Typography variant="h3" gutterBottom>
-                  {deckId}
-                </Typography>
+                <h2>{deckId}</h2>
               </Link>
             </Grid>
             <Grid item container justifyContent="flex-end" md={2}>
               <Grid item>
-                <IconButton aria-label="delete" onClick={handleOpen}>
-                  <InfoIcon fontSize="inherit" />
+                <IconButton
+                  aria-label="delete"
+                  onClick={handleOpen}
+                  style={{ fontSize: "0.7rem" }}
+                >
+                  <InfoIcon />
                 </IconButton>
               </Grid>
             </Grid>
 
-            <Typography variant="subtitle1" gutterBottom>
+            <p>
               Card {currentIndex + 1} out of {cards.length}
-            </Typography>
+            </p>
           </Grid>
           <Grid item container xs={2} justifyContent="flex-end">
             <Grid item>
@@ -103,6 +110,7 @@ function CardViewer() {
                 size="large"
                 disabled={currentIndex === 0}
                 onClick={prevCard}
+                style={{ fontSize: "0.7rem" }}
               >
                 <ArrowBackIosIcon fontSize="inherit" />
               </IconButton>
@@ -118,6 +126,7 @@ function CardViewer() {
                 size="large"
                 disabled={currentIndex === cards.length - 1}
                 onClick={nextCard}
+                style={{ fontSize: "0.7rem" }}
               >
                 <ArrowForwardIosIcon fontSize="inherit" />
               </IconButton>
@@ -132,12 +141,10 @@ function CardViewer() {
         >
           <Box sx={style}>
             <img src={Philosophers[deckId].image} height={200} />
-            <Typography id="modal-modal-title" variant="h6" component="h2">
-              {deckId}
-            </Typography>
-            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            <h6>{deckId}</h6>
+            <p>
               Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-            </Typography>
+            </p>
           </Box>
         </Modal>
       </Container>
