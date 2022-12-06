@@ -15,6 +15,7 @@ import { createTheme, styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
+import Fog from "./images/fog.jpg";
 
 import "./assets/css/main.css";
 
@@ -65,7 +66,7 @@ function CardViewer() {
   return (
     <div
       style={{
-        backgroundImage: `url(` + Philosophers[deckId].background + `)`,
+        backgroundImage: `url(${Philosophers[deckId].background || Fog}`,
         backgroundSize: `cover`,
         backgroundRepeat: `no-repeat`,
         margin: `0 0 0 0`,
@@ -142,11 +143,10 @@ function CardViewer() {
           aria-describedby="modal-modal-description"
         >
           <Box sx={style}>
+            <h3>{deckId}</h3>
             <img src={Philosophers[deckId].image} height={200} />
-            <h6>{deckId}</h6>
-            <p>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-            </p>
+
+            <p>{Philosophers[deckId].bio}</p>
           </Box>
         </Modal>
       </Container>

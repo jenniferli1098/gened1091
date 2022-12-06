@@ -8,7 +8,9 @@ import "./assets/css/main.css";
 import Gourds from "./images/gourds.jpg";
 import Mountains from "./images/mountains.jpg";
 import Sprouts from "./images/sprouts.jpg";
-import Banner from "./images/banner.jpg";
+import Fog from "./images/fog.jpg";
+import House from "./images/house.jpg";
+import Final from "./images/final.jpg";
 const Card = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   textAlign: "center",
@@ -20,40 +22,33 @@ const Card = styled(Paper)(({ theme }) => ({
 }));
 
 function HomePage() {
-  const levels = ["Mengzi", "Kongzi"];
-  const decks = levels.map((deckId) => {
-    return (
-      <Grid item xs={6} md={4}>
-        <Card elevation={3}>
-          <Link to={`/viewer/${deckId}`}>{deckId}</Link>
-        </Card>
-      </Grid>
-    );
-  });
   return (
-    // <Container maxWidth="md" margin="30px">
-    //   <Typography variant="h3" gutterBottom>
-    //     Homepage
-    //   </Typography>
-    //   <Typography variant="subtitle1" gutterBottom>
-    //     Welcome!
-    //   </Typography>
-    //   <Typography variant="h4" gutterBottom>
-    //     Flashcards
-    //   </Typography>
-    //   <Grid
-    //     container
-    //     direction="row"
-    //     justifyContent="center"
-    //     alignItems="stretch"
-    //     spacing={5}
-    //   >
-    //     {decks}
-    //   </Grid>
-    // </Container>
-
     <div id="wrapper" class="divided">
-      <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+      <section class="banner  orient-right  style1 content-align-left">
+        <div class="content">
+          <p>
+            Ultimately, in reimagining We’re Not Really Strangers as a digital
+            card game with prompts inspired by ancient Chinese philosophers, we
+            urge individuals to reflect on universal human topics:
+          </p>
+
+          <ul>
+            <li>Human nature</li>
+            <li>Morality</li>
+            <li>Interpersonal relationships</li>
+            <li>External and internal motivations</li>
+            <li>Structure of society</li>
+          </ul>
+          <p>
+            In the process of answering these questions, players strengthen both
+            their relationships with others and with themselves. The open-ended
+            nature of the questions stimulates intellectual discourse that
+            encourages individuals to reflect on their ruts and patterns, their
+            values, and their perspectives on humanity. Our adaptation thus
+            serves as an accessible form of self-cultivation and education
+            inspired by Chinese philosophers.
+          </p>
+        </div>
         <div class="content">
           <h1>Gened 1091 Project</h1>
           <p class="major">Welcome to our Gened 1091 Project</p>
@@ -82,34 +77,6 @@ function HomePage() {
             the course overall.
           </p>
         </div>
-        <div class="content">
-          <h1> </h1>
-          <br></br>
-          <br></br>
-          <br></br>
-          <p>
-            Ultimately, in reimagining We’re Not Really Strangers as a digital
-            card game with prompts inspired by ancient Chinese philosophers, we
-            urge individuals to reflect on universal human topics:
-          </p>
-
-          <ul>
-            <li>Human nature</li>
-            <li>Morality</li>
-            <li>Interpersonal relationships</li>
-            <li>External and internal motivations</li>
-            <li>Structure of society</li>
-          </ul>
-          <p>
-            In the process of answering these questions, players strengthen both
-            their relationships with others and with themselves. The open-ended
-            nature of the questions stimulates intellectual discourse that
-            encourages individuals to reflect on their ruts and patterns, their
-            values, and their perspectives on humanity. Our adaptation thus
-            serves as an accessible form of self-cultivation and education
-            inspired by Chinese philosophers.
-          </p>
-        </div>
       </section>
 
       <section
@@ -128,7 +95,7 @@ function HomePage() {
           </ul>
         </div>
         <div class="image">
-          <img src={Gourds} alt="" />
+          <img src={Fog} alt="" />
         </div>
       </section>
 
@@ -196,7 +163,7 @@ function HomePage() {
           </ul>
         </div>
         <div class="image">
-          <img src={Sprouts} alt="" />
+          <img src={House} alt="" />
         </div>
       </section>
 
@@ -217,7 +184,7 @@ function HomePage() {
           </ul>
         </div>
         <div class="image">
-          <img src={Mountains} alt="" />
+          <img src={Final} alt="" />
         </div>
       </section>
 
