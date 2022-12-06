@@ -1,9 +1,9 @@
-import Gourds from "./images/gourds.jpg";
-import Mountains from "./images/mountains.jpg";
-import Sprouts from "./images/sprouts.jpg";
-import Fog from "./images/fog.jpg";
-import House from "./images/house.jpg";
-import Final from "./images/final.jpg";
+import Gourds from "./images/gallery/gourds.jpg";
+import Mountains from "./images/gallery/mountains.jpg";
+import Sprouts from "./images/gallery/sprouts.jpg";
+import Fog from "./images/gallery/fog.jpg";
+import House from "./images/gallery/house.jpg";
+import Final from "./images/gallery/final.jpg";
 
 import Mozi from "./images/philosophers/mozi.jpg";
 import Kongzi from "./images/philosophers/kongzi.jpg";

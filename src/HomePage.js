@@ -5,12 +5,12 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import { createTheme, styled } from "@mui/material/styles";
 import "./assets/css/main.css";
-import Gourds from "./images/gourds.jpg";
-import Mountains from "./images/mountains.jpg";
-import Sprouts from "./images/sprouts.jpg";
-import Fog from "./images/fog.jpg";
-import House from "./images/house.jpg";
-import Final from "./images/final.jpg";
+import Gourds from "./images/gallery/gourds.jpg";
+import Mountains from "./images/gallery/mountains.jpg";
+import Sprouts from "./images/gallery/sprouts.jpg";
+import Fog from "./images/gallery/fog.jpg";
+import House from "./images/gallery/house.jpg";
+import Final from "./images/gallery/final.jpg";
 const Card = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   textAlign: "center",
