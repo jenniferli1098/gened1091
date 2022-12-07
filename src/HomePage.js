@@ -40,7 +40,7 @@ function HomePage() {
           <p class="major">Welcome to our Gened 1091 Project</p>
           <p>
             In our readaptation of the We’re Not Really Strangers card game, we
-            introduce card decks that brings the philosophical themes of Mozi,
+            introduce card decks that bring the philosophical themes of Mozi,
             Kongzi, Mengzi, Zhuangzi, and Dong Zhongshu to life. This game is
             designed for two or more players who access the card game online and
             answer thought-provoking questions inspired by key Chinese
