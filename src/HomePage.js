@@ -90,7 +90,7 @@ function HomePage() {
       <section class="spotlight style1 orient-left content-align-left image-position-center">
         <div class="content">
           <h2>Kongzi</h2>
-          <p>Self-cultivation | Filiel Piety | Interpersonal Relationships</p>
+          <p>Self-Cultivation | Filial Piety | Interpersonal Relationships</p>
           <ul class="actions stacked">
             <li>
               <a href="/viewer/Kongzi" class="button">
@@ -107,7 +107,7 @@ function HomePage() {
       <section class="spotlight style1 orient-right content-align-left image-position-center">
         <div class="content">
           <h2>Mengzi</h2>
-          <p>Human Nature | Self-cultivation | Structure of Society</p>
+          <p>Human Nature | Self-Cultivation | Structure of Society</p>
           <ul class="actions stacked">
             <li>
               <a href="/viewer/Mengzi" class="button">
@@ -124,7 +124,7 @@ function HomePage() {
       <section class="spotlight style1 orient-left content-align-left image-position-center">
         <div class="content">
           <h2>Zhuangzi</h2>
-          <p>Spontenaity | Human Nature | Interpersonal Relationships</p>
+          <p>Spontaneity | Human Nature | Interpersonal Relationships</p>
           <ul class="actions stacked">
             <li>
               <a href="/viewer/Zhuangzi" class="button">

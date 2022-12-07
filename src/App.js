@@ -14,9 +14,10 @@ export function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<HomePage />} />
-        <Route path="/" element={<HomePage />} />
-        <Route path="/viewer/:deckId" element={<CardViewer />} />
+        <Route path="*" element={<CardViewer />} />
+        {/* <Route index element={<HomePage />} /> */}
+        {/* <Route path="/viewer/:deckId" element={<CardViewer />} /> */}
+        {/* <Route path="/" element={<HomePage />} /> */}
       </Routes>
     </BrowserRouter>
   );
