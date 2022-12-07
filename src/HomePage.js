@@ -7,8 +7,9 @@ import House from "./images/gallery/house.jpg";
 import Final from "./images/gallery/final.jpg";
 
 import CardViewer from "./CardViewer";
-
+import CardViewerTest from "./CardViewerTest";
 function HomePage() {
+  // return <CardViewerTest deckId={"Mozi"} />;
   return (
     <div id="wrapper" class="divided">
       <section class="banner  orient-right  style1 content-align-left">
