@@ -34,7 +34,7 @@ const Philosophers = {
   },
   Dongzhongshu: {
     image: Dongzhongshu,
-    bio: "something",
+    bio: "Dong Zhongshu was a Confucian scholar who  emphasized the importance of Kongzi's the <i>Spring and Autumn Annals</i>. He reinterpreted Confucianism by synthesizing ideas from other schools of thought like Daoism and Legalism. Additionally, Dong Zhongshu advocated for a rejection of the Qin empire and an adoption of Confucianism. The memorials he wrote to Emperor Wu successfully convinced the emperor to support education and classical learning. As a result, Emperor Wu hired ministers with classical learning.",
     background: House,
   },
   Summary: {
