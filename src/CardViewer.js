@@ -13,7 +13,6 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { createTheme, styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
 import Fog from "./images/gallery/fog.jpg";
 
@@ -43,10 +42,8 @@ const darkTheme = createTheme({ palette: { mode: "dark" } });
 const lightTheme = createTheme({ palette: { mode: "light" } });
 
 function CardViewer() {
-//   let { deckId } = useParams();
-//   const deckId = useParams();
-  const deckId = "Mozi";
-  console.log("deckId:",  deckId );
+  let { deckId } = useParams();
+  console.log("deckId:", deckId);
   let cards = Cards[deckId];
   const [currentIndex, setCurrentIndex] = React.useState(0);
 
@@ -87,9 +84,9 @@ function CardViewer() {
           <Grid item md={10}></Grid>
           <Grid item container xs={12} alignItems="center">
             <Grid item md={10}>
-              {/* <Link to={`/`}> */}
+              <Link to={`/`}>
                 <h2>{deckId}</h2>
-              {/* </Link> */}
+              </Link>
             </Grid>
             <Grid item container justifyContent="flex-end" md={2}>
               <Grid item>

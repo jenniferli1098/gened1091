@@ -5,6 +5,7 @@ import Sprouts from "./images/gallery/sprouts.jpg";
 import Fog from "./images/gallery/fog.jpg";
 import House from "./images/gallery/house.jpg";
 import Final from "./images/gallery/final.jpg";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
@@ -73,9 +74,9 @@ function HomePage() {
           <p>Structure of Society | External Motivation | Human Nature</p>
           <ul class="actions stacked">
             <li>
-              <a href="/viewer/Mozi" class="button">
+              <Link to="/viewer/Mozi" class="button">
                 Explore Deck
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -90,9 +91,9 @@ function HomePage() {
           <p>Self-Cultivation | Filial Piety | Interpersonal Relationships</p>
           <ul class="actions stacked">
             <li>
-              <a href="/viewer/Kongzi" class="button">
+              <Link to="/viewer/Kongzi" class="button">
                 Explore Deck
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -107,9 +108,9 @@ function HomePage() {
           <p>Human Nature | Self-Cultivation | Structure of Society</p>
           <ul class="actions stacked">
             <li>
-              <a href="/viewer/Mengzi" class="button">
+              <Link to="/viewer/Mengzi" class="button">
                 Explore Deck
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -124,9 +125,9 @@ function HomePage() {
           <p>Spontaneity | Human Nature | Interpersonal Relationships</p>
           <ul class="actions stacked">
             <li>
-              <a href="/viewer/Zhuangzi" class="button">
+              <Link to="/viewer/Zhuangzi" class="button">
                 Explore Deck
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -141,9 +142,9 @@ function HomePage() {
           <p>Structure of Society</p>
           <ul class="actions stacked">
             <li>
-              <a href="/viewer/Dongzhongshu" class="button">
+              <Link to="/viewer/Dongzhongshu" class="button">
                 Explore Deck
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -162,9 +163,9 @@ function HomePage() {
           </p>
           <ul class="actions stacked">
             <li>
-              <a href="/viewer/Summary" class="button">
+              <Link to="/viewer/Summary" class="button">
                 Explore Deck
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

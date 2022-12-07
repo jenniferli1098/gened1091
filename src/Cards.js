@@ -52,6 +52,17 @@ const Cards = {
     "Do you understand life?",
     "Do you gravitate towards rational thinking or towards experience and intuition?",
   ],
+  Dongzhongshu: [
+    "Imagine you are riding in a trolley whose brakes are not working. You are headed towards a switch in the train tracks. If you continue on the current track, five people will be killed. You can pull a lever that would switch the trolley to another track, which would save the five people but kill another person who is standing on the tracks. Would you pull the lever?",
+    "Suppose you have a limited budget. You can build a bridge for your neighborhood or invest that money into education. What would you choose, and how would you convince your superiors of your vision?",
+    "Dong Zhongshu believes in creating an educational system focused on self-cultivation, where individuals are promoted based on the degree to which they are striving to cultivate themselves. Do you agree? What are your opinions on the role of education? ",
+    "You are the leader of a developing country where water is limited: there is not enough water for all of your citizens. How do you determine who receives water and who does not? ",
+    "Describe your experience with education. Do you believe your education served you well? ",
+    "Do you prioritize fairness or efficiency? Why? ",
+    "Suppose you are the leader of a small village. You are given a magical coin and offered the opportunity to flip it. If the coin lands on heads with probability X, everyone in your village will flourish. If the coin lands on tails, you and your subjects will die a painful death. What is the lowest value you would be willing to assign to X to choose to flip the coin?",
+    "If you were an emperor or empress trying to construct a meritocracy, how would you identify merit in your subjects? Who deserves to be promoted?",
+    "Reflect on your current role in society. How would you describe your current position? Do you think you occupy a fitting position, or do you think you should have a higher or lower role in society? Why?",
+  ],
   Summary: [
     "How would you mourn the loss of a loved one? ",
     "What makes someone deserving of political power?",
